@@ -1,0 +1,8 @@
+language: go
+deploy:
+    provider: script
+    script: make travis_deploy
+    skip_cleanup: true
+    on:
+      tags: true
+      all_branches: true
