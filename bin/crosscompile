@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# darwin
+GOOS=darwin GOARCH=amd64 go build -o pkg/ltsv2json-darwin-amd64
+GOOS=darwin GOARCH=386 go build -o pkg/ltsv2json-darwin-386
+# linux
+GOOS=linux GOARCH=amd64 go build -o pkg/ltsv2json-linux-amd64
+GOOS=linux GOARCH=386 go build -o pkg/ltsv2json-linux-386
