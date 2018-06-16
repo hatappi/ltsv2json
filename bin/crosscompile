@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 # darwin
 GOOS=darwin GOARCH=amd64 go build -o pkg/ltsv2json-darwin-amd64
