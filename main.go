@@ -30,10 +30,10 @@ func getReader() (io.Reader, error) {
 		}
 		return file, nil
 	} else {
-		return os.Stdin, nil
 		if terminal.IsTerminal(0) {
 			return nil, fmt.Errorf("please set stdin or -f")
 		}
+		return os.Stdin, nil
 	}
 	return nil, fmt.Errorf("unreachable")
 }
